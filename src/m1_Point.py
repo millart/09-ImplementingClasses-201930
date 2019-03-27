@@ -115,9 +115,9 @@ class Point(object):
         half_distance_x = (p2.x - self.x) / 2
         half_distance_y = (p2.y - self.y) / 2
 
-        self.x = self.x + half_distance_x
-        self.y = self.y + half_distance_y
-        return 'Point({}, {})'.format(self.x, self.y)
+        new_x = self.x + half_distance_x
+        new_y = self.y + half_distance_y
+        return Point(new_x, new_y)
 
 
 def run_test_init():
